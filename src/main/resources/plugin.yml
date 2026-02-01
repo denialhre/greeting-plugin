@@ -1,0 +1,39 @@
+name: SwapBingo
+version: ${project.version}
+main: com.example.swapbingo.SwapBingoPlugin
+api-version: "1.21"
+description: Bingo minigame with integrated Death Swap mechanic
+author: Pedro
+
+commands:
+  bingo:
+    description: Bingo game commands
+    usage: /bingo <start|stop|card|status>
+    permission: swapbingo.bingo
+    aliases: [b, itembingo]
+
+  swapbingo:
+    description: Admin commands for SwapBingo
+    usage: /swapbingo <reload|config|stats>
+    permission: swapbingo.admin
+    aliases: [sb]
+
+  remake:
+    description: Start or vote in a remake vote
+    usage: /remake [yes|no|status]
+    permission: swapbingo.bingo
+    aliases: [rv, rematch]
+
+permissions:
+  swapbingo.bingo:
+    description: Allows use of bingo commands
+    default: true
+  swapbingo.bingo.start:
+    description: Allows starting bingo games
+    default: op
+  swapbingo.bingo.stop:
+    description: Allows stopping bingo games
+    default: op
+  swapbingo.admin:
+    description: Admin commands
+    default: op

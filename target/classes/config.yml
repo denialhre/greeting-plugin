@@ -1,0 +1,173 @@
+# SwapBingo Configuration
+# Bingo minigame with integrated Death Swap mechanic
+
+# Debug mode - shows detailed info about biomes/structures in chat
+debug:
+  enabled: false
+  # Show biome info when player enters a new biome
+  show-biome-info: true
+  # Show structure info when player is near a structure
+  show-structure-info: true
+
+general:
+  # Prefix for all plugin messages
+  prefix: "&6[SwapBingo]&r "
+  # World to return players to after game ends
+  lobby-world: "world"
+
+# Death Swap Settings (integrated into Bingo)
+swap:
+  # Enable/disable the swap mechanic during Bingo
+  enabled: true
+  # Time between swaps in seconds
+  interval-seconds: 180
+  # Warning times before swap (in seconds)
+  countdown-warnings:
+    - 30
+    - 10
+    - 5
+    - 4
+    - 3
+    - 2
+    - 1
+
+  messages:
+    swap-warning: "&c⚠ Swap in &e{time}&c seconds!"
+    swap-occurred: "&e{player1} &7swapped with &e{player2}"
+
+# Bingo Settings
+bingo:
+  enabled: true
+  # Minimum players required
+  min-players: 1
+  # Maximum players allowed
+  max-players: 16
+  # Card size (5 = 5x5 grid)
+  card-size: 5
+
+  # Distribution of task types on the card (must sum to card-size^2 = 25)
+  tasks-distribution:
+    items: 12
+    entities: 5
+    biomes: 5
+    structures: 3
+
+  # Win pattern: RANDOM (picks row or column randomly), ROW, COLUMN
+  win-pattern: RANDOM
+  # If true, all players get the same tasks (but individual progress)
+  shared-card: true
+
+  # World settings
+  world:
+    name: "bingo_world"
+    # Reset world when someone wins
+    reset-on-win: true
+    # Use random seed each game
+    random-seed: true
+    # Fixed seed (used if random-seed is false)
+    fixed-seed: 0
+
+  # Spawn cage settings (barrier cages around spawn in a circle)
+  spawn:
+    # Distance from center for each cage (blocks)
+    cage-distance: 50
+    # Countdown before barriers drop (seconds) - players can view their bingo card during this time
+    start-countdown: 30
+    # Grace period for fall damage after barriers drop (seconds)
+    fall-grace-period: 5
+
+  # Game grace period (no PvP, no swaps at start)
+  grace-period:
+    # Enable grace period at start of game
+    enabled: true
+    # Duration of grace period in minutes
+    duration-minutes: 10
+
+  # Location purchase settings (spend diamonds to track locations)
+  location-purchase:
+    # Enable purchasing location tracking
+    enabled: true
+    # Cost in diamonds to track a location
+    diamond-cost: 1
+
+  # Difficulty voting settings
+  difficulty:
+    # Enable pre-game difficulty voting
+    vote-enabled: true
+    # Duration of vote in seconds
+    vote-duration-seconds: 10
+    # Default difficulty if voting disabled: EASY, MEDIUM, or HARD
+    default: MEDIUM
+
+  # Boss bar display settings
+  boss-bar:
+    # Show boss bar for grace period countdown
+    grace-period: true
+    # Show boss bar for swap timer
+    swap-timer: true
+
+  # Post-win settings
+  win:
+    # Delay before starting next round (seconds)
+    next-round-delay: 20
+    # Enable fireworks celebration
+    fireworks-enabled: true
+
+  # Task tracking settings
+  tracking:
+    # Check biome every N chunks player moves
+    biome-check-interval-chunks: 1
+    # Distance from structure center to count as "discovered"
+    structure-discovery-radius: 100
+    # Check structure every N blocks moved
+    structure-check-interval-blocks: 20
+
+  # Scoreboard settings
+  scoreboard:
+    enabled: true
+    title: "&l&6Bingo Progress"
+
+  messages:
+    game-starting: "&aBingo game starting!"
+    task-complete: "&aCompleted: &e{task}"
+    bingo: "&6&lBINGO! &a{player} &7completed a {pattern}!"
+    card-given: "&aYour bingo card has been generated! Right-click the Nether Star to view it."
+    no-game-running: "&cNo bingo game is currently running."
+    already-running: "&cA game is already running!"
+
+# Storage settings
+storage:
+  # File to store win counts
+  wins-file: "wins.yml"
+
+# Points economy system
+points:
+  # Points earned per task completion
+  task-completion: 1
+  # Points earned for trap kills (player dies at your swapped location)
+  trap-kill: 5
+  # Time window in seconds to attribute a death as a trap kill
+  trap-kill-window: 30
+  # Shop prices (in points)
+  shop:
+    # Cost to track a biome/structure location (replaces diamond cost)
+    location-track: 3
+    # Cost to re-roll a task (changes for all players)
+    task-reroll: 3
+    # Cost to trigger a surprise swap
+    surprise-swap: 5
+  # Surprise swap settings
+  surprise-swap:
+    # Warning countdown before surprise swap happens
+    warning-seconds: 5
+    # Minimum seconds before next normal swap to allow surprise swap
+    min-time-before-swap: 30
+
+# Remake voting system
+remake:
+  # Enable/disable remake voting
+  enabled: true
+  # Duration in seconds for voting
+  vote-duration: 30
+  # Cooldown in minutes before another remake vote can be started
+  cooldown-minutes: 5

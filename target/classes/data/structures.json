@@ -1,0 +1,162 @@
+[
+  {
+    "id": 2000,
+    "name": "village",
+    "displayName": "Village",
+    "dimension": "overworld",
+    "weight": 95,
+    "internalIds": ["village_plains", "village_desert", "village_savanna", "village_snowy", "village_taiga"]
+  },
+  {
+    "id": 2001,
+    "name": "pillager_outpost",
+    "displayName": "Pillager Outpost",
+    "dimension": "overworld",
+    "weight": 65,
+    "internalIds": ["pillager_outpost"]
+  },
+  {
+    "id": 2002,
+    "name": "ruined_portal",
+    "displayName": "Ruined Portal",
+    "dimension": "overworld",
+    "weight": 85,
+    "internalIds": [
+      "ruined_portal", 
+      "ruined_portal_desert", 
+      "ruined_portal_jungle", 
+      "ruined_portal_mountain", 
+      "ruined_portal_ocean", 
+      "ruined_portal_swamp", 
+      "ruined_portal_nether"
+    ]
+  },
+  {
+    "id": 2003,
+    "name": "shipwreck",
+    "displayName": "Shipwreck",
+    "dimension": "overworld",
+    "weight": 80,
+    "internalIds": ["shipwreck", "shipwreck_beached"]
+  },
+  {
+    "id": 2004,
+    "name": "desert_pyramid",
+    "displayName": "Desert Pyramid",
+    "dimension": "overworld",
+    "weight": 60,
+    "internalIds": ["desert_pyramid"]
+  },
+  {
+    "id": 2005,
+    "name": "jungle_pyramid",
+    "displayName": "Jungle Pyramid",
+    "dimension": "overworld",
+    "weight": 45,
+    "internalIds": ["jungle_pyramid"]
+  },
+  {
+    "id": 2006,
+    "name": "mineshaft",
+    "displayName": "Mineshaft",
+    "dimension": "overworld",
+    "weight": 75,
+    "internalIds": ["mineshaft", "mineshaft_mesa"]
+  },
+  {
+    "id": 2007,
+    "name": "stronghold",
+    "displayName": "Stronghold",
+    "dimension": "overworld",
+    "weight": 12,
+    "internalIds": ["stronghold"]
+  },
+  {
+    "id": 2008,
+    "name": "ancient_city",
+    "displayName": "Ancient City",
+    "dimension": "overworld",
+    "weight": 10,
+    "internalIds": ["ancient_city"]
+  },
+  {
+    "id": 2009,
+    "name": "ocean_monument",
+    "displayName": "Ocean Monument",
+    "dimension": "overworld",
+    "weight": 30,
+    "internalIds": ["monument"]
+  },
+  {
+    "id": 2010,
+    "name": "ocean_ruin",
+    "displayName": "Ocean Ruin",
+    "dimension": "overworld",
+    "weight": 70,
+    "internalIds": ["ocean_ruin_cold", "ocean_ruin_warm"]
+  },
+  {
+    "id": 2011,
+    "name": "woodland_mansion",
+    "displayName": "Woodland Mansion",
+    "dimension": "overworld",
+    "weight": 5,
+    "internalIds": ["mansion"]
+  },
+  {
+    "id": 2012,
+    "name": "igloo",
+    "displayName": "Igloo",
+    "dimension": "overworld",
+    "weight": 55,
+    "internalIds": ["igloo"]
+  },
+  {
+    "id": 2013,
+    "name": "swamp_hut",
+    "displayName": "Swamp Hut",
+    "dimension": "overworld",
+    "weight": 45,
+    "internalIds": ["swamp_hut"]
+  },
+  {
+    "id": 2014,
+    "name": "trail_ruins",
+    "displayName": "Trail Ruins",
+    "dimension": "overworld",
+    "weight": 50,
+    "internalIds": ["trail_ruins"]
+  },
+  {
+    "id": 2015,
+    "name": "trial_chambers",
+    "displayName": "Trial Chambers",
+    "dimension": "overworld",
+    "weight": 40,
+    "internalIds": ["trial_chambers"]
+  },
+  {
+    "id": 2018,
+    "name": "nether_fortress",
+    "displayName": "Nether Fortress",
+    "dimension": "nether",
+    "weight": 25,
+    "internalIds": ["fortress"]
+  },
+  {
+    "id": 2019,
+    "name": "bastion_remnant",
+    "displayName": "Bastion Remnant",
+    "dimension": "nether",
+    "weight": 20,
+    "internalIds": ["bastion_remnant"]
+  },
+  {
+    "id": 2020,
+    "name": "end_city",
+    "displayName": "End City",
+    "dimension": "end",
+    "weight": 8,
+    "internalIds": ["end_city"]
+  }
+]
