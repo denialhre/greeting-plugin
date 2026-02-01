@@ -4,7 +4,7 @@
     "name": "village",
     "displayName": "Village",
     "dimension": "overworld",
-    "weight": 95,
+    "weight": 80,
     "internalIds": ["village_plains", "village_desert", "village_savanna", "village_snowy", "village_taiga"]
   },
   {
@@ -12,7 +12,7 @@
     "name": "pillager_outpost",
     "displayName": "Pillager Outpost",
     "dimension": "overworld",
-    "weight": 65,
+    "weight": 55,
     "internalIds": ["pillager_outpost"]
   },
   {
@@ -60,7 +60,7 @@
     "name": "mineshaft",
     "displayName": "Mineshaft",
     "dimension": "overworld",
-    "weight": 75,
+    "weight": 10,
     "internalIds": ["mineshaft", "mineshaft_mesa"]
   },
   {
@@ -108,7 +108,7 @@
     "name": "igloo",
     "displayName": "Igloo",
     "dimension": "overworld",
-    "weight": 55,
+    "weight": 40,
     "internalIds": ["igloo"]
   },
   {
@@ -124,7 +124,7 @@
     "name": "trail_ruins",
     "displayName": "Trail Ruins",
     "dimension": "overworld",
-    "weight": 50,
+    "weight": 40,
     "internalIds": ["trail_ruins"]
   },
   {
@@ -132,7 +132,7 @@
     "name": "trial_chambers",
     "displayName": "Trial Chambers",
     "dimension": "overworld",
-    "weight": 40,
+    "weight": 25,
     "internalIds": ["trial_chambers"]
   },
   {
@@ -140,7 +140,7 @@
     "name": "nether_fortress",
     "displayName": "Nether Fortress",
     "dimension": "nether",
-    "weight": 25,
+    "weight": 45,
     "internalIds": ["fortress"]
   },
   {
@@ -148,7 +148,7 @@
     "name": "bastion_remnant",
     "displayName": "Bastion Remnant",
     "dimension": "nether",
-    "weight": 20,
+    "weight": 40,
     "internalIds": ["bastion_remnant"]
   },
   {
@@ -156,7 +156,7 @@
     "name": "end_city",
     "displayName": "End City",
     "dimension": "end",
-    "weight": 8,
+    "weight": 20,
     "internalIds": ["end_city"]
   }
 ]
