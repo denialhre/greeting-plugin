@@ -35,7 +35,7 @@
   { "id": 145, "name": "crimson_stem", "displayName": "Crimson Stem", "stackSize": 64, "weight": 45 },
   { "id": 148, "name": "stripped_oak_log", "displayName": "Stripped Oak Log", "stackSize": 64, "weight": 75 },
   { "id": 182, "name": "oak_leaves", "displayName": "Oak Leaves", "stackSize": 64, "weight": 90 },
-  { "id": 193, "name": "sponge", "displayName": "Sponge", "stackSize": 64, "weight": 15 },
+  { "id": 193, "name": "sponge", "displayName": "Sponge", "stackSize": 64, "weight": 10 },
   { "id": 195, "name": "glass", "displayName": "Glass", "stackSize": 64, "weight": 85 },
   { "id": 196, "name": "tinted_glass", "displayName": "Tinted Glass", "stackSize": 64, "weight": 25 },
   { "id": 201, "name": "cobweb", "displayName": "Cobweb", "stackSize": 64, "weight": 40 },
