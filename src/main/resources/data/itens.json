@@ -148,5 +148,5 @@
   { "id": 1352, "name": "brush", "displayName": "Brush", "stackSize": 1, "weight": 60 },
   { "id": 1353, "name": "netherite_upgrade_smithing_template", "displayName": "Netherite Upgrade", "stackSize": 64, "weight": 5 },
   { "id": 1412, "name": "trial_key", "displayName": "Trial Key", "stackSize": 64, "weight": 30 },
-  { "id": 1415, "name": "ominous_bottle", "displayName": "Ominous Bottle", "stackSize": 64, "weight": 20 }
+  { "id": 1415, "name": "ominous_bottle", "displayName": "Ominous Bottle", "stackSize": 64, "weight": 15 }
 ]
